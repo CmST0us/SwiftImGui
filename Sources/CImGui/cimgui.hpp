@@ -38,7 +38,7 @@ typedef unsigned __int64 ImU64;
 //typedef unsigned long long ImU64;
 #endif
 
-#define CIMGUI_DEFINE_ENUMS_AND_STRUCTS
+#undef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 
 #ifdef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 

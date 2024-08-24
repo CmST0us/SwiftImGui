@@ -61,7 +61,7 @@ extension ImGui {
         
         // Render command lists
         for n in 0..<Int(drawData.CmdListsCount) {
-            let cmdList = drawData.CmdLists[n]!.pointee
+            let cmdList = drawData.CmdLists.Data[n]!.pointee
             
             let vertexBufferSize = cmdList.vertexBufferSize
             let indexBufferSize = cmdList.indexBufferSize
