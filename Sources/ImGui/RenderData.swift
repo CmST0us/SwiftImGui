@@ -6,6 +6,9 @@
 //
 
 import CImGui
+#if canImport(Glibc)
+import Glibc
+#endif
 
 extension ImGui {
     public final class RenderData {

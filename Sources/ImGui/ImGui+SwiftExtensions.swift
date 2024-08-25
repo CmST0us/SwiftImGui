@@ -6,6 +6,9 @@
 //
 
 import CImGui
+#if canImport(Glibc)
+import Glibc
+#endif
 
 func scan<
     S : Sequence, U
