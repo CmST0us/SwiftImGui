@@ -13,6 +13,9 @@ void imgui_backend_OpenGL2_Shutdown() {
 void imgui_backend_OpenGL2_NewFrame() {
     ImGui_ImplOpenGL2_NewFrame();
 }
+void imgui_backend_OpenGL2_RenderDrawData(void *draw_data) {
+    ImGui_ImplOpenGL2_RenderDrawData((ImDrawData *)draw_data);
+}
 // Called by Init/NewFrame/Shutdown
 bool imgui_backend_OpenGL2_CreateFontsTexture() {
     return ImGui_ImplOpenGL2_CreateFontsTexture();
@@ -38,7 +41,9 @@ void imgui_backend_OpenGL3_Shutdown() {
 void imgui_backend_OpenGL3_NewFrame() {
     ImGui_ImplOpenGL3_NewFrame();
 }
-
+void imgui_backend_OpenGL3_RenderDrawData(void *draw_data) {
+    ImGui_ImplOpenGL3_RenderDrawData((ImDrawData *)draw_data);
+}
 // (Optional) Called by Init/NewFrame/Shutdown
 bool imgui_backend_OpenGL3_CreateFontsTexture() {
     return ImGui_ImplOpenGL3_CreateFontsTexture();

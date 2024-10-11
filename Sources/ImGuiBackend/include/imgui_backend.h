@@ -6,6 +6,7 @@
 bool     imgui_backend_OpenGL2_Init();
 void     imgui_backend_OpenGL2_Shutdown();
 void     imgui_backend_OpenGL2_NewFrame();
+void     imgui_backend_OpenGL2_RenderDrawData(void* draw_data);
 // Called by Init/NewFrame/Shutdown
 bool     imgui_backend_OpenGL2_CreateFontsTexture();
 void     imgui_backend_OpenGL2_DestroyFontsTexture();
@@ -17,6 +18,7 @@ void     imgui_backend_OpenGL2_DestroyDeviceObjects();
 bool     imgui_backend_OpenGL3_Init(const char* glsl_version);
 void     imgui_backend_OpenGL3_Shutdown();
 void     imgui_backend_OpenGL3_NewFrame();
+void     imgui_backend_OpenGL3_RenderDrawData(void* draw_data);
 
 // (Optional) Called by Init/NewFrame/Shutdown
 bool     imgui_backend_OpenGL3_CreateFontsTexture();
