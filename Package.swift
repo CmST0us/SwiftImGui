@@ -13,6 +13,9 @@ let package = Package(
         .library(
             name: "CImGui",
             targets: ["CImGui"]),
+        .library(
+            name: "ImGuiBackend",
+            targets: ["ImGuiBackend"]),
         .executable(name: "SwiftImGuiGenerator", targets: ["SwiftImGuiGenerator"])
     ],
     dependencies: [
@@ -28,6 +31,11 @@ let package = Package(
             name: "CImGui"),
         .target(
             name: "SwiftImGuiGenerator"),
+        
+        // Backend
+        .target(name: "ImGuiBackend", cSettings: [
+            .headerSearchPath("../CImGui/imgui")
+        ])
     ],
     cxxLanguageStandard: .cxx11
 )
