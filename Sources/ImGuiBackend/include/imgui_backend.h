@@ -1,4 +1,8 @@
 #pragma once
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdbool.h>
 
 // - OpenGL 2
@@ -25,3 +29,7 @@ bool     imgui_backend_OpenGL3_CreateFontsTexture();
 void     imgui_backend_OpenGL3_DestroyFontsTexture();
 bool     imgui_backend_OpenGL3_CreateDeviceObjects();
 void     imgui_backend_OpenGL3_DestroyDeviceObjects();
+
+#ifdef __cplusplus
+}
+#endif
