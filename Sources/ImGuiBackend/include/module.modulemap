@@ -1,4 +1,4 @@
-module CImGuiBackend {
+module ImGuiBackend {
     umbrella header "imgui_backend.h"
     export *
 }

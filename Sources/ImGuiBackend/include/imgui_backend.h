@@ -1,4 +1,5 @@
 #pragma once
+#include <stdbool.h>
 
 // - OpenGL 2
 // Follow "Getting Started" link and check examples/ folder to learn about using backends!
